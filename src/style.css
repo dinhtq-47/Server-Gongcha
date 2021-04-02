@@ -1,0 +1,708 @@
+/*reset css*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+#main {
+	margin: 0px auto;
+	width: 1920px;
+}
+
+/*start header*/
+header {
+	height: 898px;
+	background-image: url('images/banner-akana.jpg');
+	position: relative;
+	background-color: #DDDDDD;
+}
+
+header > a {
+	display: block;
+	height: 50px;
+	width: 50px;
+	background-color: #e7e7e7;
+	border: 3px solid white;
+	border-radius: 50%;
+	position: relative;
+} 
+
+header > a:first-child:before {
+	content: ' ';
+	display: block;
+	border: 4px solid #c8c8c8;
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	border-right: transparent;
+	border-top: transparent;
+}
+
+header > a:last-child:before {
+	content: ' ';
+	display: block;
+	border: 4px solid #c8c8c8;
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 10px;
+	left: 8px;
+	border-left: transparent;
+	border-bottom: transparent;
+}
+
+header > a:first-child {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	
+}
+
+header > a:last-child {
+	position: absolute;
+	top: 50%;
+	right: 12px;
+}
+
+header > a:hover {
+	background-color: #292929;
+	border-radius: 50%;
+}
+
+header #header {
+	margin: 0px auto;
+	width: 1113px;
+	padding-top: 37px;
+}
+
+header #header #menu-logo {
+	padding: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 0px;
+}
+
+header #header #menu-logo div #icon-search {
+	position: absolute;
+}
+
+header #header #menu-logo div:first-child a {
+	margin-right: 25px;
+}
+
+header #header #menu-logo div:last-child a {
+	margin-left: 25px;
+}
+
+header #header hr {
+	height: 1px;
+	margin: 32px 0px;
+	color: #d4d4d4;
+}
+
+header #header div ul {
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	margin: 0px 187px;
+}
+
+header #header div ul li a {
+	color: #545555;
+}
+
+header #header div ul li a:hover {
+	color: gray;
+	text-shadow: 1px 1px 1px gray;
+}
+
+header #header #slider {
+	margin-top: 216px;
+	width: 358px;
+}
+
+header #header #slider h2 {
+	text-transform: uppercase;
+	margin-bottom: 15.5px;
+}
+
+header #header #slider p {
+	color: #7f7f7f;
+	margin-bottom: 43.5px;
+	line-height: 20px;
+	font-size: 13px;
+}
+
+header #header #slider a {
+	padding: 20px 45px;
+	color: white;
+	background-color: black;
+	text-transform: uppercase;
+}
+
+header #header #slider a:hover {
+	background-color: gray;
+
+}
+
+header #header > ul  {
+	margin-top: 305px;
+}
+
+header #header > ul li {
+	display: inline-block;
+}
+
+header #header > ul li a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	margin-right: 7px;
+}
+
+header #header > ul li a:hover {
+	background-color: black;
+}
+/*end header*/
+
+/*start section*/
+
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(236, 235, 233, 0.5);
+}
+
+section {
+	margin: 0px 30px;
+	margin-top: 45px;
+}
+
+section div#support {
+
+	display: flex;
+	width: 1260px;
+	margin: 0px auto;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+section div#support ul {
+	flex-basis: 300px;
+}
+
+section div#support ul li {
+	text-align: center;
+}
+
+section div#support ul li h4 {
+	margin: 31px 0px;
+}
+
+section div#support ul li p {
+	text-align: center;
+	font-size: 13px;
+	line-height: 20px;
+	color: #929292;
+}
+
+section div#images-banner {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 110px;
+}
+
+section div#images-banner > div {
+	width: 445px;
+	height: 443px;
+	position: relative;
+	background-color: #F3F3F2;
+}
+
+section div#images-banner > div:hover div {
+	display: block;
+}
+
+section div#images-banner > div > div {
+	display: none;
+}
+
+section div#images-banner > div div.mask a {
+ 	position: absolute;
+ 	bottom: 20px; 
+ 	left: 96px;
+ 	display: block;
+ 	padding: 28px 100px;
+ 	background-color: white;
+ 	color: black;
+ 	text-transform: uppercase;
+}
+
+section div#images-banner > div div.mask a:hover {
+	background-color: gray;
+	color: white;
+}
+
+section div#trending {
+	width: 732px;
+	margin: 0px auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+section div#trending h3 {
+	font-size: 42px;
+	line-height: 64px;
+}
+
+section div#trending hr {
+	margin: 32px auto;
+	width: 105px;
+	display: block;
+}
+
+section div#trending p {
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 37px;
+}
+
+section div#trending ul li {
+	display: inline-block;
+}
+
+section div#trending ul li a {
+	display: block;
+	background-color: #eeeeee;
+	color: #838383;
+	padding: 12px 34px;
+	margin-left: 20px;
+	position: relative;
+}
+
+section div#trending ul li a::after {
+	content: " ";
+	width: 7px;
+	height: 7px;
+	border: 7px solid #eeeeee;
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	transform: rotate(45deg);
+	border-top: transparent;
+	border-left: transparent;
+}
+
+section div#trending ul li a:hover,
+section div#trending ul li a:hover::after {
+	background-color: #292929;
+	border-color: #292929;
+	color: white;
+}
+
+section div#products {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+section div#products > div {
+	height: 555px;
+	width: 350px;
+	position: relative;
+}
+
+section div#products > div img {
+	width: 100%;
+	height: 463px;
+	display: block;
+	background-color: #f6f6f6;
+}
+
+section div#products > div > div .decrement {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: white;
+	display: block;
+	background-color: #c55353;
+	padding: 10px 10px;
+}
+
+section div#products > div > div .new-product {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: white;
+	display: block;
+	background-color: black;
+	padding: 10px 10px;
+	display: block;
+}
+
+section div#products > div > div:nth-child(3) {
+	text-align: center;
+}
+
+section div#products > div > div:nth-child(3) p {
+	font-size: 14px;
+	margin: 15px 0px;
+}
+
+section div#products > div > div:nth-child(3) span {
+	font-size: 16px;
+	color: #929292;
+}
+
+section div#products > div:hover div:nth-child(3) span {
+	display: none;
+}
+
+section div#products > div > div:nth-child(3) ul li a:nth-child(2) {
+	background-color: #edd9a2;
+}
+
+section div#products > div > div:nth-child(3) ul li a:nth-child(3) {
+	background-color: #b0dfb8;
+}
+
+section div#products > div > div:nth-child(3) ul li a:nth-child(4) {
+	background-color: #b7cdd4;
+}
+
+section div#products > div > div.mask-products {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	display: none;
+}
+
+section div#products > div:hover div.mask-products {
+	display: block;
+}
+
+section div#products > div > div.mask-products > div > a {
+	padding: 20px 42px;
+	color: black;
+	font-size: 11px;
+	line-height: 20px;
+	background-color: white;
+	text-transform: uppercase;
+	position: absolute; 
+	top: 390px;
+}
+
+section div#products > div > div.mask-products > div > a:hover {
+	background-color: black;
+	color: white;
+}
+
+section div#products > div > div.mask-products > div > a:first-child {
+	left: 15px;
+}
+
+section div#products > div > div.mask-products > div > a:last-child {
+	right: 15px;
+}
+
+section div#products > div > div.mask-products > div ul {
+	position: absolute;
+	left: 120px;
+	bottom: 20px;
+}
+
+section div#products > div > div.mask-products > div ul li a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #efacac;
+	border: 2px solid transparent;
+}
+
+section div#products > div > div.mask-products > div ul li a:nth-child(2) {
+	background-color: #edd9a2;
+}
+
+section div#products > div > div.mask-products > div ul li a:nth-child(3) {
+	background-color: #b0dfb8;
+}
+
+section div#products > div > div.mask-products > div ul li a:nth-child(4) {
+	background-color: #b7cdd4;
+}
+
+section div#products > div > div.mask-products > div ul li a:hover {
+	border: 2px solid black;
+}
+
+section div#products > a {
+	padding: 20px 42px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 20px;
+	display: inline-block;
+	margin: 80px auto;
+	background-color: black;
+}
+
+section div#products > a:hover {
+	background-color: gray;
+	color: white;
+}
+
+div#trademark {
+	width: 100&;
+	height: 777px;
+}
+
+div#trademark > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+div#trademark > div > div:first-child {
+	flex-basis: 50%;
+	height: 630px;
+	background-color: #F2F2F2;
+}
+
+div#trademark > div > div:last-child {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 530px;
+	background-color: #fafafa;
+	width: 100%;
+}
+
+div#trademark > div > div:last-child h4 {
+	margin-top: 103px;
+	font-size: 42px;
+	line-height: 64px;
+}
+
+div#trademark > div > div:last-child hr {
+	width: 105px;
+	margin: 32px auto;
+}
+
+div#trademark > div > div:last-child p {
+	width: 525px;
+	font-size: 13px;
+	margin: 0px auto;
+	line-height: 20px;
+	color: #929292;
+	margin-bottom: 50px;
+}
+
+div#trademark > div > div:last-child > a {
+	padding: 24px 5px;
+	border: 1px solid black;
+	display: block;
+	text-transform: uppercase;
+	width: 195px;
+	margin: 0px auto;
+	color: black;
+}
+
+div#trademark > div > div:last-child > a:hover {
+	background-color: rgba(236, 235, 233, 0.5);
+}
+
+div#trademark > div > div:last-child > a:active {
+	color: black;
+}
+
+div#trademark ul {
+	display: flex;
+	margin-left: 111px;
+}
+
+div#trademark ul li {
+	display: inline-block;
+	height: 147px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+div#trademark ul li:nth-child(2) {
+	margin-top: 11px;
+}
+
+div#trademark ul li a {
+	line-height: 147px;
+	margin: 0px auto;
+}
+
+div#about ul {
+	width: 100%;
+	background-color:  gray;
+	height: 320px;
+	line-height: 320px;
+	letter-spacing: -4px;
+}
+div#about ul li {
+	display: inline-block;
+}
+
+div#about ul li a img {
+	vertical-align: middle;
+	display: block;
+}
+
+footer {
+	margin-top: 70px;
+}
+
+.footer {
+	padding: 0px auto;
+	padding-left: 404px;
+}
+
+footer > div:first-child > ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer > div > ul:first-child > li {
+	width: 352px;
+	margin-right: 28px;
+}
+
+footer > div > ul > li p {
+	font-size: 13px;
+	line-height: 20px;
+	color: #929292;
+	margin: 60px  0px;
+	width: 266px;
+}
+
+footer > div > ul > li:first-child ul li {
+	display: inline-block;
+} 
+
+footer > div > ul > li:first-child ul  li  a {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #E9E9E9;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 10px;
+	text-indent: -1000000px;
+}
+
+footer > div > ul > li:first-child ul  li:first-child  a {
+	background-image: url('images/facebook.png');
+}
+
+footer > div > ul > li:first-child ul  li:nth-child(2)  a {
+	background-image: url('images/intagram-socila-logo.png');
+}
+
+footer > div > ul > li:first-child ul  li:nth-child(3)  a {
+	background-image: url('images/socialite-logo-printeres.png');
+}
+
+footer > div > ul > li:first-child ul  li:last-child  a {
+	background-image: url('images/twitter.png');
+}
+
+footer > div > ul > li > ul {
+
+}
+
+footer > div > ul > li > ul > li {
+	margin-bottom: 10px;
+}
+
+footer > div > ul > li form {
+	margin: 40px 0px 83px 0px;
+}
+
+footer #form {
+	position: relative;
+}
+
+footer #form input {
+	width: 350px;
+	height: 50px;
+	padding: 20px 20px;
+	color: #B1B1B1;
+	position: relative;
+	outline-color: #DFDFDF;
+	border: 1px solid #DFDFDF;
+}
+
+footer #form a {
+	position: absolute;
+	top: 30%;
+	right: 22px;
+	font-size: 11px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+}
+
+footer > div > ul > li   {
+	
+}
+
+footer > div > ul > li a  {
+	color: #929292;
+}
+
+footer > div > ul > li a:hover {
+	color: black;
+}
+
+footer > div > ul > li h3 {
+	font-size: 20px;
+	line-height: auto;
+	color: black;
+	margin-bottom: 50px;
+}
+
+
+footer > div:last-child  {
+	background-color: #1e1b1b;
+	height: 52px;
+	display: flex;
+}
+
+footer > div:last-child >  p {
+	color: #959494;
+	font-size: 13px;
+	line-height: 52px;
+}
+
+footer > div:last-child > img {
+	height: 24px;
+	margin-left: 408px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
