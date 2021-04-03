@@ -1,0 +1,76 @@
+@media screen and (max-width: 1200px) {
+
+
+	header {
+		height: 898px;
+		background-image: url('images/banner-akana.jpg');
+		position: relative;
+		background-position-x: center;
+		background-color: #DDDDDD;
+	}
+
+	header #header #slider {
+    
+	}
+
+	section div#images-banner > div {
+    	height: 285px;
+    	margin-bottom: 100px;
+	}
+
+	section div#products > div {
+    	flex-basis: 350px;
+    	position: relative;
+	}
+
+	section div#products > div img {
+    	height: 400px;
+	}
+
+	section div#products > div {
+    	height: 490px;
+	}
+
+	div#trademark > div > div:first-child {
+    	flex-basis: 110%;
+	}
+
+	div#about ul {
+    	width: 100%;
+    	background-color: gray;
+   		height: 320px;
+   	}
+
+   	div#about ul li a img {
+   		max-width: 319px;
+	} 
+
+	.footer {
+		padding: 0px 200px;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	#main > footer > div:nth-child(1) > ul {
+		flex-basis: 100%;
+	}
+
+	footer > div > ul:first-child > li {
+    	width: 280px;
+	}
+
+	#main > footer > div:nth-child(1) > ul > li:nth-child(2) {
+		margin-left: 20px;
+	}
+
+	footer > div:last-child > img {
+		margin-right: 125px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	div#trademark > div > div:first-child {
+    	flex-basis: 101%;
+	}
+}
