@@ -1,76 +1,67 @@
-@media screen and (max-width: 1200px) {
+@media all and (max-width: 960px) and (min-width: 768px) {
+	#container header {
+		padding: 36px 50px 0px 50px;
+		background-position: center;
 
-
-	header {
-		height: 898px;
-		background-image: url('images/banner-akana.jpg');
-		position: relative;
-		background-position-x: center;
-		background-color: #DDDDDD;
 	}
 
-	header #header #slider {
-    
+	#container header > div#banner-slider div:nth-child(2) ul  {
+   		    margin: 0px 0px 217px 0px;
 	}
 
-	section div#images-banner > div {
-    	height: 285px;
-    	margin-bottom: 100px;
+	#about-footer {
+    	padding-left: 50px;
 	}
 
-	section div#products > div {
-    	flex-basis: 350px;
-    	position: relative;
-	}
-
-	section div#products > div img {
-    	height: 400px;
-	}
-
-	section div#products > div {
-    	height: 490px;
-	}
-
-	div#trademark > div > div:first-child {
-    	flex-basis: 110%;
-	}
-
-	div#about ul {
-    	width: 100%;
-    	background-color: gray;
-   		height: 320px;
-   	}
-
-   	div#about ul li a img {
-   		max-width: 319px;
-	} 
-
-	.footer {
-		padding: 0px 200px;
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-	}
-
-	#main > footer > div:nth-child(1) > ul {
-		flex-basis: 100%;
-	}
-
-	footer > div > ul:first-child > li {
-    	width: 280px;
-	}
-
-	#main > footer > div:nth-child(1) > ul > li:nth-child(2) {
-		margin-left: 20px;
-	}
-
-	footer > div:last-child > img {
-		margin-right: 125px;
+	#payment-method div {
+    	margin-left: 50px;
 	}
 }
 
-@media screen and (max-width: 768px) {
-	div#trademark > div > div:first-child {
-    	flex-basis: 101%;
+@media all and (max-width: 767px) and (min-width: 500px) {
+	#container header {
+		padding: 36px 50px 0px 50px;
+		background-position: center;
+
 	}
+
+	#container header > div#banner-slider div:nth-child(2) ul  {
+   		margin: 0px 0px 217px 0px;
+	}
+
+	#about-footer {
+    	padding-left: 100px;
+	}
+
+	#payment-method div {
+    	margin-left: 100px;
+	}
+}
+
+@media all and (max-width: 499px) {
+	#container header {
+		padding: 36px 20px 0px 20px;
+		background-position: center;
+
+	}
+
+	#container header > div#banner-slider div:nth-child(2) ul  {
+   		margin: 0px auto;
+   		max-width: 100vh;
+	}
+
+	#container header > div#banner-slider div:nth-child(2) ul li a {
+   		padding: 0px 8px;
+   		font-size: 12px;
+	}
+
+	#banner-slider > div:nth-child(3) {
+		margin-top: 217px;
+	}
+
+	#products > div {
+   	 	flex-basis: calc( (100% - 30px) / 2);
+	}
+
+
 }
